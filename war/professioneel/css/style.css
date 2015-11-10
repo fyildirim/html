@@ -443,7 +443,7 @@ section.page {margin-top:60px;padding:40px 0;}
 /*	Navbar phone
 /*----------------------------------------------------*/
 
-#navphone {width:100%; background-color:#242424; height:auto; padding-bottom:20px;}
+#navphone {width:100%; background-color:#242424; height:auto; padding-bottom:20px; margin-top:60px}
 .phonelist { width:100%; background-color:#242424;}
 .phonelist li {text-align:center; padding: 10px 20px;}
 .phonelist li:hover {background-color:#191919;}
