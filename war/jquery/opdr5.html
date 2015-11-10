@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>jQuery</title>
+    <style> #apen, #autos {
+    	display:inline-block;
+    }</style>
+  </head>
+
+  <body><div id="apen">
+  	<p class="top">Kapucijnaap</p>	
+	<p>Japanse <br></p>
+	<p>Makaak	<br></p>
+	<p>Witoor <br></p>
+	<p>penseelaapje<br></p>
+	<p>Mantelbaviaan (vrouwtje)<br></p>
+	<p>Colobusaap	<br></p>
+	<p>Goudwanggibbon	<br></p>
+	<p>Withandgibbon<br></p>
+	<p>Roodbuiktamarin	<br></p>
+	<p>Baardaap	<br></p>
+	<p>Zadelrugtamarin	<br></p>
+	<p>Goeldi<br></p></div>
+	
+	<div id="autos">
+	
+	<p class="top">Auto1</p>
+	<p>Auto2</p>
+	<p>Auto2</p>
+	<p>Auto2</p>
+	<p>Auto2</p>
+	<p>Auto2</p>
+	</div><br>
+	 <button type="button" id="knop1">#1</button>
+	 <button type="button" id="knop2">#2</button>
+	 <button type="button" id="knop3">#3</button>
+	 <button type="button" id="knop4">#4</button>
+	<script>
+	$( "#knop1" ).click(function() {
+	  $( "#apen" ).css({"color":"red"});
+	});
+	$( "#knop2" ).click(function() {
+		  $( "#autos" ).css({"color":"green"});
+		});
+	$( "#knop3" ).click(function() {
+		  $( ".top" ).css({"color":"blue"});
+		});
+	$( "#knop4" ).click(function() {
+		  $( "#apen, #autos, .top" ).css({"color":"black"});
+		});
+	</script>
+  </body>
+</html>
