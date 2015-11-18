@@ -447,4 +447,7 @@ section.page {margin-top:60px;padding:40px 0;}
 .phonelist { width:100%; background-color:#242424;}
 .phonelist li {text-align:center; padding: 10px 20px;}
 .phonelist li:hover {background-color:#191919;}
-.phonelist li.seperator:hover {background-color:#242424;}
+
+#mobile-css {margin:0px 20%; height:auto; background-color:#242424;}
+#mobile-css li {text-align:center; padding: 10px 20px;}
+#mobile-css li:hover {background-color:#191919;}

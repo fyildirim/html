@@ -68,18 +68,18 @@
 					<!-- PHONE NAV -->
 					<ul class="phonelist">
 						<li class="seperator"><hr></li>
-						<li onclick="window.open('http://fyildirim.nl/', '_blank');">Mijn
-							website</li>
-						<li onclick="window.open('http://github.com/fyildirim', '_blank');">Mijn
-							GitHub</li>
-						<li onclick="window.open('http://fyildirim.nl/', '_blank');">Mijn
-							website</li>
-						<li onclick="window.open('http://fyildirim.nl/', '_blank');">Mijn
-							website</li>
-						<li onclick="window.open('http://fyildirim.nl/', '_blank');">Mijn
-							website</li>
-						<li onclick="window.open('http://fyildirim.nl/', '_blank');">Mijn
-							website</li>
+						<li onclick="window.open('http://github.com/fyildirim', '_blank');" class="unknown">Github</li>
+						<li onclick="window.open('http://projectbierhier.nl/', '_blank');" class="unknown">BierHier</li>
+						<li onclick="window.open('http://fyildirim.nl/', '_blank');" class="unknown">3</li>
+						<li onclick="window.open('http://fyildirim.nl/', '_blank');" class="unknown">4</li>
+						<li onclick="window.open('http://fyildirim.nl/', '_blank');" class="unknown">5</li>
+						<li class="phonecss">Opdrachten<span class="arrow">&nbsp;&nbsp;&#187;</span></li>
+						<div id="mobile-css"><ul>
+							<li>CSS Opdrachten<span class="arrow">&nbsp;&nbsp;&#187;</span></li>
+							<li>Opdracht</li>
+							<li>Opdracht</li>
+							<li>Opdracht</li>
+						</ul></div>
 					</ul>
 				</div>
 			</header>
@@ -89,8 +89,8 @@
 				<div class="main-text">FERHAT YILDIRIM</div>
 				<div class="sub-text">
 					<ul class="slide-text">
-						<li>TEKST 1</li>
-						<li>TEKST 2</li>
+						<li>WELKOM</li>
+						<li>DIT IS MIJN PORTFOLIO</li>
 					</ul>
 				</div>
 				<div id="wrapper-slider">
@@ -110,14 +110,14 @@
 						</h2>
 						<h3 class="page-subtitle">lorem ipsum</h3>
 						<h3 class="page-subtitle">sorem lipsum</h3>
-						<!-- <div class="screens">
+						<div class="screens">
 							<div class="left">
 								<img src="img/about/left.png" alt="">
 							</div>
 							<div class="right">
 								<img src="img/about/right.png" alt="">
 							</div>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</section>
@@ -147,18 +147,26 @@
 		</script>
 		<script>   
 		var windowsize = $(window).width();
+		var opdrachtenopen = false;
 		$(window).resize(function() {
 			var windowsize = $(window).width();
 			if (windowsize > 1042) {
 				$('#navphone').css("display", "none");
+				$('#mobile-css').css("display", "none");
 			}
 		});
 		$(document).ready(function() {
 			$('#navphone').slideUp();
+			$('#mobile-css').slideUp();
 		});
 		$('#nav-mobile').click(function() {
 			$('#navphone').slideToggle();
-		});</script>
+		});
+		$('.phonecss').click(function() {
+		$('#mobile-css').slideToggle();
+		});
+		
+		</script>
 		<script>
 			window.onkeydown = function(event) {
 				var e = event || window.event;
