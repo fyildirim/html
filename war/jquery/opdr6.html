@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<title>jQuery</title>
+	<style>.blok1, .blok2 { display:inline-block;width:200px; height:200px; border:2px solid black;}</style>
+	</head>
+	<body>	
+		<div class="blok1"></div>
+		<div class="blok2"></div>
+		<br><button class="reset">Reset</button>
+		<script>
+		$(".blok1").mouseover(function() {
+		    $( this ).css( "background-color", "green" );
+		});
+		$(".blok2").mouseover(function() {
+		    $( this ).css( "background-color", "purple" );
+		});
+		$(".blok1 , .blok2").mouseout(function() {
+		    $( this ).css( "background-color", "blue" );
+		});
+		$(".reset").click(function() {
+			$(".blok1 , .blok2").css("background-color", "white");			
+		});
+		</script>
+	</body>
+</html>
