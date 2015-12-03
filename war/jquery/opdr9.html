@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			body {
+				text-align: center;
+				background-color: #CCCCCC;
+				font: 14px Arial;
+				margin:auto auto;
+			}
+			table {
+				margin: auto auto;
+				text-align:left;
+			}
+		</style>
+		<title>Variables Variables</title>
+	</head>
+	
+	<body>
+		<table>
+		<tr>	<td>16.4</td>							<td class="type"></td>	</tr>
+		<tr>	<td>15</td>								<td class="type"></td>	</tr>
+		<tr>	<td>'Volvo'</td>						<td class="type"></td>	</tr>
+		<tr>	<td>'12-12-2015'</td>					<td class="type"></td>	</tr>
+		<tr>	<td>{a:1, b:2}</td>						<td class="type"></td>	</tr>
+		<tr>	<td>['Piet', 'Jan', 'Klaas']</td>		<td class="type"></td>	</tr>
+		</table>
+	</body>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+			var a = 16.4;
+			var b = 15;
+			var c = 'Volvo';
+			var d = '12-12-2015';
+			var e = {a:1, b:2};
+			var f = ['Piet', 'Jan', 'Klaas'];
+
+			$('.type').eq(0).html(typeof a);
+			$('.type').eq(1).html(typeof b);
+			$('.type').eq(2).html(typeof c);
+			$('.type').eq(3).html(typeof d);
+			$('.type').eq(4).html(typeof e);
+			$('.type').eq(5).html(typeof f);
+			
+			
+	</script>
+<!-- 	<script src="../../2.1.4_jquery.min.js"></script> -->
+</html>

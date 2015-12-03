@@ -201,7 +201,7 @@ section.page {margin-top:60px;padding:40px 0;}
 /*	Logo
 /*----------------------------------------------------*/
 #logo {float:left;height:60px;font-size:30px;font-weight:800;font-family: 'Ubuntu', sans-serif;color:#000;line-height:57px;padding:0!important;margin:0;}
-#logo h1 {position:relative;z-index:2;font-size:30px;width:120px;text-align:center;margin:25px 0 0 0;letter-spacing:-0.2rem;color:#000;}
+#logo h1 {position:relative;z-index:2;font-size:30px;width:120px;text-align:center;margin:35px 0 0 0;letter-spacing:-0.2rem;color:#000;}
 #logo .label {position:absolute;display:block;background-color:#fff;top:-35px;left:0;width:120px;height:120px;z-index:1;}
 
 
