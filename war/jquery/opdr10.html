@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<style>
+			div {
+				position:relative;
+				overflow:hidden;
+				text-align:center;
+				width:500px;
+				height:250px;
+				margin: 0px auto;
+				float:none;
+				white-space: nowrap;
+			}
+			img {
+				float:none;
+				position:relative;
+				width:500px;
+				height:250px;
+			}
+		</style>
+		<title>Image Slider</title>
+	</head>
+	
+	<body>
+		<div>
+			<img src="foto-1.jpg">
+			<img src="foto-2.jpg">
+		</div>
+	</body>
+		
+	<script src="jquery_2_1_1.js"></script>
+	<script>
+		var fotos = ["foto-1.jpg", "foto-2.jpg", "foto-3.jpg"];
+		var count = 0;
+		$(document).ready(function() {
+			$('img').click(function () {
+				count++;
+				$('img').animate({
+					"left": "-100%"
+				}, 1000, function() {
+					$('img').eq(0).attr("src", fotos[count%fotos.length]);
+					$('img').eq(1).attr("src", fotos[(count+1)%fotos.length]);
+					$('img').css("left", "initial");
+				});
+			});
+		});
+	</script>
+</html>
